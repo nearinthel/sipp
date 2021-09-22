@@ -1,0 +1,49 @@
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\bin\Debug\DAL.dll.config
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\bin\Debug\DAL.dll
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\bin\Debug\DAL.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\bin\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\bin\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\bin\Debug\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\obj\Debug\DAL.dll
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\obj\Debug\DAL.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Alberto\Desktop\asp\SIPP\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\EntityFramework.xml
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\EntityFramework.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\obj\Debug\DAL.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\obj\Debug\DAL.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\DAL.dll.config
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\DAL.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\DAL\bin\Debug\DAL.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\bin\Debug\DAL.dll.config
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\bin\Debug\DAL.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\bin\Debug\DAL.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\bin\Debug\Entities.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\bin\Debug\EntityFramework.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\bin\Debug\Entities.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\bin\Debug\EntityFramework.xml
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\obj\Debug\DAL.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\DAL\obj\Debug\DAL.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\DAL\bin\Debug\DAL.dll.config
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\DAL\bin\Debug\DAL.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\DAL\bin\Debug\DAL.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\DAL\bin\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\DAL\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\DAL\bin\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\DAL\bin\Debug\es\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\DAL\obj\Debug\DAL.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\DAL\obj\Debug\DAL.pdb

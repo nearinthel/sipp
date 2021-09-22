@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceUsuario" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:19685/ServiceUsuario.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:19685/ServiceUsuario.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:19685/ServiceUsuario.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Entities.DTOs" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceUsuario_obtenerValoracionesDeEmpresa_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerValoracionesDeEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_obtenerValoracionesDeEmpresa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerValoracionesDeEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_ingresarValoracion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ingresarValoracion" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_ingresarValoracion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ingresarValoracionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_obtenerEmpresaPorLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerEmpresaPorLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_obtenerEmpresaPorLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerEmpresaPorLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_obtenerPedidosDeUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerPedidosDeUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_obtenerPedidosDeUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:obtenerPedidosDeUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_getUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_getUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_registroUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:registroUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_registroUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registroUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_loginUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:loginUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_loginUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_ObtenerUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_ObtenerUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_guardarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:guardarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_guardarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:guardarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_ComprobarEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobarEmail" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_ComprobarEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ComprobarEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_getUbicaciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUbicaciones" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_getUbicaciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUbicacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_IngresarPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:IngresarPedido" />
+  </wsdl:message>
+  <wsdl:message name="IServiceUsuario_IngresarPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IngresarPedidoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceUsuario">
+    <wsdl:operation name="obtenerValoracionesDeEmpresa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/obtenerValoracionesDeEmpresa" message="tns:IServiceUsuario_obtenerValoracionesDeEmpresa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/obtenerValoracionesDeEmpresaResponse" message="tns:IServiceUsuario_obtenerValoracionesDeEmpresa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ingresarValoracion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/ingresarValoracion" message="tns:IServiceUsuario_ingresarValoracion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/ingresarValoracionResponse" message="tns:IServiceUsuario_ingresarValoracion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEmpresaPorLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/obtenerEmpresaPorLocal" message="tns:IServiceUsuario_obtenerEmpresaPorLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/obtenerEmpresaPorLocalResponse" message="tns:IServiceUsuario_obtenerEmpresaPorLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="obtenerPedidosDeUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/obtenerPedidosDeUsuario" message="tns:IServiceUsuario_obtenerPedidosDeUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/obtenerPedidosDeUsuarioResponse" message="tns:IServiceUsuario_obtenerPedidosDeUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/getUsuarios" message="tns:IServiceUsuario_getUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/getUsuariosResponse" message="tns:IServiceUsuario_getUsuarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registroUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/registroUsuario" message="tns:IServiceUsuario_registroUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/registroUsuarioResponse" message="tns:IServiceUsuario_registroUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="loginUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/loginUsuario" message="tns:IServiceUsuario_loginUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/loginUsuarioResponse" message="tns:IServiceUsuario_loginUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/ObtenerUsuario" message="tns:IServiceUsuario_ObtenerUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/ObtenerUsuarioResponse" message="tns:IServiceUsuario_ObtenerUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="guardarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/guardarUsuario" message="tns:IServiceUsuario_guardarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/guardarUsuarioResponse" message="tns:IServiceUsuario_guardarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/ComprobarEmail" message="tns:IServiceUsuario_ComprobarEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/ComprobarEmailResponse" message="tns:IServiceUsuario_ComprobarEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUbicaciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/getUbicaciones" message="tns:IServiceUsuario_getUbicaciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/getUbicacionesResponse" message="tns:IServiceUsuario_getUbicaciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IngresarPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceUsuario/IngresarPedido" message="tns:IServiceUsuario_IngresarPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceUsuario/IngresarPedidoResponse" message="tns:IServiceUsuario_IngresarPedido_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceUsuario" type="tns:IServiceUsuario">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="obtenerValoracionesDeEmpresa">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/obtenerValoracionesDeEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ingresarValoracion">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/ingresarValoracion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEmpresaPorLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/obtenerEmpresaPorLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerPedidosDeUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/obtenerPedidosDeUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsuarios">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/getUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registroUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/registroUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/loginUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/ObtenerUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/guardarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ComprobarEmail">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/ComprobarEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUbicaciones">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/getUbicaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IngresarPedido">
+      <soap:operation soapAction="http://tempuri.org/IServiceUsuario/IngresarPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceUsuario">
+    <wsdl:port name="BasicHttpBinding_IServiceUsuario" binding="tns:BasicHttpBinding_IServiceUsuario">
+      <soap:address location="http://localhost:19685/ServiceUsuario.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

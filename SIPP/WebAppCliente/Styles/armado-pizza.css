@@ -1,0 +1,132 @@
+.editForm {
+    height: auto;
+    width: 500px;
+    background-color: #f5f5f5;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+.inputEdit {
+    height: 20px;
+    width: 200px;
+    border: 3px solid white;
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+    padding: 5px;
+    background: #808080;
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.inputHidden {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    position: relative;
+    bottom: 30px;
+}
+
+.titleArticulo {
+    color: #808080;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mapArea {
+    width: 350px;
+    height: 350px;
+    border-radius: 15px;
+    border: 5px solid white;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    width: 150px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #808080;
+    text-transform: uppercase;
+    padding-left: 50px;
+    -webkit-transition: background-image 200ms linear, color 200ms linear;
+    -moz-transition: background-image 200ms linear, color 200ms linear;
+    -o-transition: background-image 200ms linear, color 200ms linear;
+    -ms-transition: background-image 200ms linear, color 200ms linear;
+    transition: background-image 200ms linear, color 200ms linear;
+}
+
+    .btn span {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .btn:hover {
+        color: #00cb17;
+        -webkit-transition: background-image 200ms linear, color 200ms linear;
+        -moz-transition: background-image 200ms linear, color 200ms linear;
+        -o-transition: background-image 200ms linear, color 200ms linear;
+        -ms-transition: background-image 200ms linear, color 200ms linear;
+        transition: background-image 200ms linear, color 200ms linear;
+    }
+
+.btnEscondido {
+    width: 0px;
+    height: 0px;
+    display: none;
+    visibility: hidden;
+}
+
+.btnPizza {
+    padding-left: 30px;
+    height: 30px;
+    width:134px;
+    color: white;
+    border: 4px solid white;
+    background-color: darkslategrey;
+    top: 0px;
+    left: 0px;
+}
+
+.errorEdit {
+    color: #ca0000;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.errorMessage {
+    position: absolute;
+    background-color: #e92121;
+    width: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 200px;
+    margin-top: 100px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    color: #000000;
+    opacity: 0.5;
+    display: none;
+    text-align: center;
+}

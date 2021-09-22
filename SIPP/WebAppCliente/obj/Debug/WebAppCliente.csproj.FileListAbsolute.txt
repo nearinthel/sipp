@@ -1,0 +1,35 @@
+C:\Users\Alberto\Desktop\asp\SIPP\WebAppCliente\obj\Debug\WebAppCliente.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp\SIPP\WebAppCliente\bin\WebAppCliente.dll
+C:\Users\Alberto\Desktop\asp\SIPP\WebAppCliente\bin\WebAppCliente.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\WebAppCliente\bin\Entities.dll
+C:\Users\Alberto\Desktop\asp\SIPP\WebAppCliente\bin\Entities.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\WebAppCliente\obj\Debug\WebAppCliente.dll
+C:\Users\Alberto\Desktop\asp\SIPP\WebAppCliente\obj\Debug\WebAppCliente.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\WebAppCliente\bin\WebAppCliente.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\WebAppCliente\bin\WebAppCliente.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\WebAppCliente\bin\Entities.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\WebAppCliente\bin\Entities.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\WebAppCliente\obj\Debug\WebAppCliente.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp explote\SIPP\WebAppCliente\obj\Debug\WebAppCliente.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\WebAppCliente\obj\Debug\WebAppCliente.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WebAppCliente\bin\WebAppCliente.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WebAppCliente\bin\WebAppCliente.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WebAppCliente\bin\Entities.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WebAppCliente\bin\Entities.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WebAppCliente\obj\Debug\WebAppCliente.csprojResolveAssemblyReference.cache
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WebAppCliente\obj\Debug\WebAppCliente.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WebAppCliente\obj\Debug\WebAppCliente.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WebAppCliente\bin\WebAppCliente.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WebAppCliente\bin\WebAppCliente.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WebAppCliente\bin\Entities.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WebAppCliente\bin\Entities.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WebAppCliente\obj\Debug\WebAppCliente.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WebAppCliente\obj\Debug\WebAppCliente.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WebAppCliente\obj\Debug\WebAppCliente.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WebAppCliente\bin\WebAppCliente.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WebAppCliente\bin\WebAppCliente.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WebAppCliente\bin\Entities.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WebAppCliente\bin\Entities.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WebAppCliente\obj\Debug\WebAppCliente.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WebAppCliente\obj\Debug\WebAppCliente.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WebAppCliente\obj\Debug\WebAppCliente.pdb

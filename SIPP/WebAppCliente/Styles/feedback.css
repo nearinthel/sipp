@@ -1,0 +1,65 @@
+﻿body {
+}
+.comentario {
+    float:left;
+    height:auto;
+    width:100%;
+    border-bottom: 1px dotted black;
+      
+}
+
+.divUsuario {
+    background-color:yellowgreen;
+    
+}
+.contenedor {
+
+   width:70%;
+   height:auto;
+   margin: 0 auto;
+   overflow:hidden;
+   margin-top:50px; 
+
+
+}
+arriba {
+    float:left;
+    height:auto;    
+}
+fecha {
+    
+   
+}
+estrellas {
+    
+}
+infoPizzeria {
+    margin :0 auto;
+    height:auto;
+    width:70%;  
+}
+
+input[type="radio"] {
+/*visibility: hidden;*/
+/*/display:none;*/
+/*width: 0px;
+height: 0px;
+padding: 0px;
+margin: 0px;*/
+}
+label {
+padding-left: 20px;
+height: 16px;
+}
+
+input[type="radio"] + label{
+background: url("/Images/star_default.png") 0 0 no-repeat;
+background-size:cover;
+}
+input[type="radio"]:focus + label{
+background: url("/Images/star_hover.png") 0 0 no-repeat;
+background-size:cover;
+}
+
+.imgPerfil {
+margin-right:10px;}

@@ -1,0 +1,147 @@
+﻿body {  
+    margin:0px;  
+    padding:0px;  
+    top: 0px;
+    position:absolute;  
+    left: 50%;  
+    margin-left:-600px;  
+    background-color:#FF9A40;
+    }   
+header{
+    background-color:#FF7800;
+	width: 1200px;
+	height: 230px;
+}
+#logo{
+    height:230px;
+    width:280px;
+    max-width:280px;
+    max-height:230px;
+    top:0px;
+    margin:0px;
+    padding:0px;
+    position:relative;
+    float:left;
+
+}
+#imglogo {
+        max-width:280px;
+    max-height:230px;
+}
+
+#titulo {
+    height:230px;
+    
+    position:relative;
+    margin-top:0px;
+    top:0px;
+    margin-left:0px;
+    float:left;
+}
+h1{
+   	color: red;
+}
+
+nav{
+	width: 1200px;
+	height: 40px;
+    background-color:#FF7800;
+	vertical-align: middle;
+	margin-top:0px;
+}
+#menu{
+	width: 1200px;
+	height: 40px;
+	margin-top: 0px;
+    margin-left: 0px;
+    left:0px;
+	top: 0px;
+}
+
+#menu ul{
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    position:relative;
+    text-align: center;
+
+}
+#menu ul li.nivel1 { 
+	float: left;
+	width: 162px;
+	margin-right: 2px;
+    text-align: center;
+}
+
+#menu ul li a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	background-color: #666;
+	border: solid 1px #fff;
+	padding: 8px;
+	position: relative;
+}
+#menu ul li:hover {
+    position: relative;
+}
+#menu ul li a:hover, #menu ul li:hover a.nivel1 {
+    background-color: #888;
+    color: #000;
+    position: relative;
+}
+#menu ul li a.nivel1 {
+    display: block!important;
+    display: none;
+    position: relative;
+}
+#menu ul li ul {
+    display: none;
+}
+#menu ul li a:hover ul, #menu ul li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0px;
+}
+#menu ul li ul li a {
+    width: 160px;
+    padding: 6px 0px 8px 0px;
+    border-top-color: #000;
+}
+#menu ul li ul li a:hover {
+    border-top-color: #000;
+    position: relative;
+}
+
+section{
+	width: 1200px;
+	height: auto;
+	background-color: yellow;
+	display:inline-block;
+    padding:0px;
+    margin:0px;
+
+}
+article{
+	width: 1200px;
+	height: 600px;
+	float: left;
+    padding:0px;
+    margin:0px;
+	background-color:white;
+
+}
+
+#contenidoMenuContextual > li > a {
+    text-decoration:none;
+    color:white;
+}
+
+footer{
+	width: 1200px;
+	height: 50px;
+	background-color: orange;
+    top:0px;
+    margin-top:-5px;
+
+}

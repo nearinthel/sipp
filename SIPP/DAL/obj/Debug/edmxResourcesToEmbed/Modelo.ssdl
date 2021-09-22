@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlacartaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="AlacartaModelStoreContainer">
+    <EntitySet Name="Articulo" EntityType="AlacartaModel.Store.Articulo" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="ArticuloLocal" EntityType="AlacartaModel.Store.ArticuloLocal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Descuento" EntityType="AlacartaModel.Store.Descuento" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Empresa" EntityType="AlacartaModel.Store.Empresa" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Especificacion" EntityType="AlacartaModel.Store.Especificacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EspecificacionLocal" EntityType="AlacartaModel.Store.EspecificacionLocal" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Estado" EntityType="AlacartaModel.Store.Estado" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Local" EntityType="AlacartaModel.Store.Local" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Pedido" EntityType="AlacartaModel.Store.Pedido" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ubicacion" EntityType="AlacartaModel.Store.Ubicacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Usuario" EntityType="AlacartaModel.Store.Usuario" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Valoracion" EntityType="AlacartaModel.Store.Valoracion" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Articulo" Association="AlacartaModel.Store.FK_Articulo">
+      <End Role="Articulo" EntitySet="Articulo" />
+      <End Role="ArticuloLocal" EntitySet="ArticuloLocal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Especificacion" Association="AlacartaModel.Store.FK_Especificacion">
+      <End Role="Especificacion" EntitySet="Especificacion" />
+      <End Role="EspecificacionLocal" EntitySet="EspecificacionLocal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Estado_Pedido" Association="AlacartaModel.Store.FK_Estado_Pedido">
+      <End Role="Pedido" EntitySet="Pedido" />
+      <End Role="Estado" EntitySet="Estado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local" Association="AlacartaModel.Store.FK_Local">
+      <End Role="Local" EntitySet="Local" />
+      <End Role="EspecificacionLocal" EntitySet="EspecificacionLocal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local_Articulo" Association="AlacartaModel.Store.FK_Local_Articulo">
+      <End Role="Local" EntitySet="Local" />
+      <End Role="ArticuloLocal" EntitySet="ArticuloLocal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local_Empresa" Association="AlacartaModel.Store.FK_Local_Empresa">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="Local" EntitySet="Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pedido_Local" Association="AlacartaModel.Store.FK_Pedido_Local">
+      <End Role="Local" EntitySet="Local" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pedido_Usuario" Association="AlacartaModel.Store.FK_Pedido_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ubicacion_Usuario" Association="AlacartaModel.Store.FK_Ubicacion_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Ubicacion" EntitySet="Ubicacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valoracion_Empresa" Association="AlacartaModel.Store.FK_Valoracion_Empresa">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="Valoracion" EntitySet="Valoracion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valoracion_Usuario" Association="AlacartaModel.Store.FK_Valoracion_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Valoracion" EntitySet="Valoracion" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Articulo">
+    <Key>
+      <PropertyRef Name="Nombre" />
+    </Key>
+    <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Unidad_base" Type="decimal" Nullable="false" Scale="2" />
+  </EntityType>
+  <EntityType Name="ArticuloLocal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="idArticulo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="idLocal" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Costo_base" Type="decimal" Scale="2" />
+  </EntityType>
+  <EntityType Name="Descuento">
+    <Key>
+      <PropertyRef Name="Cantidad" />
+      <PropertyRef Name="Porcentaje" />
+    </Key>
+    <Property Name="Cantidad" Type="decimal" Nullable="false" />
+    <Property Name="Porcentaje" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="Rut" />
+    </Key>
+    <Property Name="Rut" Type="bigint" Nullable="false" />
+    <Property Name="Razon_social" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Telefono" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Pass" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Especificacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="EspecificacionLocal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" />
+    <Property Name="idEspecificacion" Type="bigint" Nullable="false" />
+    <Property Name="idLocal" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="costo" Type="decimal" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="IdEstado" />
+    </Key>
+    <Property Name="IdEstado" Type="bigint" Nullable="false" />
+    <Property Name="TipoEstado" Type="bigint" Nullable="false" />
+    <Property Name="FechaPedido" Type="varchar" MaxLength="50" />
+    <Property Name="FechaProceso" Type="varchar" MaxLength="50" />
+    <Property Name="FechaEnviado" Type="varchar" MaxLength="50" />
+    <Property Name="IdPedido" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Local">
+    <Key>
+      <PropertyRef Name="Nombre" />
+    </Key>
+    <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Latitud" Type="varchar" MaxLength="50" />
+    <Property Name="Longitud" Type="varchar" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Telefono" Type="decimal" Nullable="false" />
+    <Property Name="Rut_empresa" Type="bigint" Nullable="false" />
+    <Property Name="Localidad" Type="varchar" MaxLength="50" />
+    <Property Name="Area" Type="decimal" />
+    <Property Name="Pass" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Pedido">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Costo" Type="decimal" Nullable="false" />
+    <Property Name="Estado" Type="bit" Nullable="false" />
+    <Property Name="Id_usuario" Type="bigint" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Local" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Descripcion" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="Codigo_html" Type="varchar" Nullable="false" MaxLength="5000" />
+    <Property Name="DireccionPedido" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="LatitudDireccion" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="LongitudDireccion" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Ubicacion">
+    <Key>
+      <PropertyRef Name="Nombre_referencia" />
+      <PropertyRef Name="Id_usuario" />
+    </Key>
+    <Property Name="Nombre_referencia" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Latitud" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Longitud" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Direccion" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Id_usuario" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Apellido" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Celular" Type="varchar" MaxLength="15" />
+    <Property Name="Telefono" Type="varchar" MaxLength="15" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Pass" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Valoracion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id_usuario" Type="bigint" Nullable="false" />
+    <Property Name="id_empresa" Type="bigint" Nullable="false" />
+    <Property Name="puntaje" Type="int" Nullable="false" />
+    <Property Name="comentario" Type="varchar" MaxLength="500" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Articulo">
+    <End Role="Articulo" Type="AlacartaModel.Store.Articulo" Multiplicity="1" />
+    <End Role="ArticuloLocal" Type="AlacartaModel.Store.ArticuloLocal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Nombre" />
+      </Principal>
+      <Dependent Role="ArticuloLocal">
+        <PropertyRef Name="idArticulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Especificacion">
+    <End Role="Especificacion" Type="AlacartaModel.Store.Especificacion" Multiplicity="1" />
+    <End Role="EspecificacionLocal" Type="AlacartaModel.Store.EspecificacionLocal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especificacion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EspecificacionLocal">
+        <PropertyRef Name="idEspecificacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Estado_Pedido">
+    <End Role="Pedido" Type="AlacartaModel.Store.Pedido" Multiplicity="1" />
+    <End Role="Estado" Type="AlacartaModel.Store.Estado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedido">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Estado">
+        <PropertyRef Name="IdPedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local">
+    <End Role="Local" Type="AlacartaModel.Store.Local" Multiplicity="1" />
+    <End Role="EspecificacionLocal" Type="AlacartaModel.Store.EspecificacionLocal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Local">
+        <PropertyRef Name="Nombre" />
+      </Principal>
+      <Dependent Role="EspecificacionLocal">
+        <PropertyRef Name="idLocal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local_Articulo">
+    <End Role="Local" Type="AlacartaModel.Store.Local" Multiplicity="1" />
+    <End Role="ArticuloLocal" Type="AlacartaModel.Store.ArticuloLocal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Local">
+        <PropertyRef Name="Nombre" />
+      </Principal>
+      <Dependent Role="ArticuloLocal">
+        <PropertyRef Name="idLocal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local_Empresa">
+    <End Role="Empresa" Type="AlacartaModel.Store.Empresa" Multiplicity="1" />
+    <End Role="Local" Type="AlacartaModel.Store.Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Rut" />
+      </Principal>
+      <Dependent Role="Local">
+        <PropertyRef Name="Rut_empresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pedido_Local">
+    <End Role="Local" Type="AlacartaModel.Store.Local" Multiplicity="1" />
+    <End Role="Pedido" Type="AlacartaModel.Store.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Local">
+        <PropertyRef Name="Nombre" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="Nombre_Local" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pedido_Usuario">
+    <End Role="Usuario" Type="AlacartaModel.Store.Usuario" Multiplicity="1" />
+    <End Role="Pedido" Type="AlacartaModel.Store.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="Id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ubicacion_Usuario">
+    <End Role="Usuario" Type="AlacartaModel.Store.Usuario" Multiplicity="1" />
+    <End Role="Ubicacion" Type="AlacartaModel.Store.Ubicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ubicacion">
+        <PropertyRef Name="Id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valoracion_Empresa">
+    <End Role="Empresa" Type="AlacartaModel.Store.Empresa" Multiplicity="1" />
+    <End Role="Valoracion" Type="AlacartaModel.Store.Valoracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Rut" />
+      </Principal>
+      <Dependent Role="Valoracion">
+        <PropertyRef Name="id_empresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valoracion_Usuario">
+    <End Role="Usuario" Type="AlacartaModel.Store.Usuario" Multiplicity="1" />
+    <End Role="Valoracion" Type="AlacartaModel.Store.Valoracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Valoracion">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

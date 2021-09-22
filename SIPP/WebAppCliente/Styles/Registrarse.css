@@ -1,0 +1,95 @@
+﻿body {
+}
+.RegForm {
+    min-height: 250px;
+    height: auto;
+    width: 710px;
+    background-color: #282828;
+    padding-left: 100px;
+    padding-right: 10px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.RegForm h1 {
+    color:#0074cb;
+    /*font-weight:normal;*/
+    margin-top:0;
+    
+    display:block;
+    border-radius:7px;
+    
+    width:175px;
+}
+
+.inputReg {
+    height: 20px;
+    width: 200px;
+    border: 3px solid white;
+    -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+    -moz-box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1), 0 0 16px rgba(0,0,0,0.1);
+    padding: 5px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 5px 0;
+    color: white;
+}
+
+.btnReg {
+    height: 30px;
+    width: 90px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    border: 4px solid white;
+    background-color: #808080;
+    padding: 3px;
+}
+
+.btnReg:hover {
+    background-color:#0265b0;
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+.lblReg {
+    color: #FFFFFF;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.RegForm td:first-child {
+    padding-bottom:22px;
+    text-align: left;
+    padding-right :50px;
+}
+
+.errorReg {
+    color: #c30000;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    text-align: left;
+    display:block;
+}
+
+.okReg {
+    /*color: #00cb17;*/
+    color: green;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:uppercase;
+    text-align: left;
+    display:block;
+}
+
+

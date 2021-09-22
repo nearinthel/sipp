@@ -1,0 +1,30 @@
+C:\Users\Alberto\Desktop\asp\SIPP\CommonValues\bin\Debug\CommonValues.dll.config
+C:\Users\Alberto\Desktop\asp\SIPP\CommonValues\bin\Debug\CommonValues.dll
+C:\Users\Alberto\Desktop\asp\SIPP\CommonValues\bin\Debug\CommonValues.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\CommonValues\obj\Debug\CommonValues.dll
+C:\Users\Alberto\Desktop\asp\SIPP\CommonValues\obj\Debug\CommonValues.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\CommonValues\bin\Debug\CommonValues.dll.config
+C:\Users\Alberto\Desktop\asp explote\SIPP\CommonValues\bin\Debug\CommonValues.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\CommonValues\bin\Debug\CommonValues.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\CommonValues\bin\Debug\EntityFramework.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\CommonValues\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\CommonValues\bin\Debug\EntityFramework.xml
+C:\Users\Alberto\Desktop\asp explote\SIPP\CommonValues\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alberto\Desktop\asp explote\SIPP\CommonValues\obj\Debug\CommonValues.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\CommonValues\obj\Debug\CommonValues.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\CommonValues\bin\Debug\CommonValues.dll.config
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\CommonValues\bin\Debug\CommonValues.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\CommonValues\bin\Debug\CommonValues.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\CommonValues\bin\Debug\EntityFramework.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\CommonValues\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\CommonValues\bin\Debug\EntityFramework.xml
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\CommonValues\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\CommonValues\obj\Debug\CommonValues.csprojResolveAssemblyReference.cache
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\CommonValues\obj\Debug\CommonValues.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\CommonValues\obj\Debug\CommonValues.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\CommonValues\bin\Debug\CommonValues.dll.config
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\CommonValues\bin\Debug\CommonValues.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\CommonValues\bin\Debug\CommonValues.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\CommonValues\obj\Debug\CommonValues.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\CommonValues\obj\Debug\CommonValues.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\CommonValues\obj\Debug\CommonValues.csprojResolveAssemblyReference.cache

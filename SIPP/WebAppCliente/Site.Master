@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebAppCliente.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="/Styles/style.css" />
+    <script src="/Scripts/jquery.js"></script>
+    <title>A la Carta</title>
+    
+   
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="header">
+            <div class="headerContent">
+                <a href="/Pages/Default.aspx">
+                    <img src="/Images/logo.png" height="124px" /></a>
+                <div class="nav">
+                    <%
+                        String[][] btnArray = null;
+                        
+                        if (Session["Usuario"] == null)
+                        {
+                            btnArray = new String[][] { 
+                                new String[] { "Inicio", "/Pages/Default.aspx" },
+                                 new String[] { "Ingresar Pedido", "/Pages/Pedido/ArmadoPizza.aspx" }, 
+                                new String[] { "Ingresar", "/Pages/Account/Login.aspx" }, 
+                                new String[] { "Registrarme", "/Pages/Account/Registrarse.aspx" }
+                            };
+                        }
+                        else
+                        {
+                            btnArray = new String[][] { 
+                                new String[] { "Inicio", "/Pages/Default.aspx" },
+                                new String[] { "Perfil", "/Pages/EditarPerfil.aspx" },
+                                new String[] { "Ingresar Pedido", "/Pages/Pedido/ArmadoPizza.aspx" }, 
+                                new String[] { "Pedidos", "/Pages/Pedido/EstadoPedidos.aspx" }, 
+                                new String[] { "Salir", "/Pages/Account/Logout.aspx" }
+                            };
+                        }
+                        
+                        foreach (String[] btn in btnArray)
+                        {
+                            String txt = btn[0];
+                            String lnk = btn[1];
+                            String cssClass = "navButton";
+                            if (HttpContext.Current.Request.Url.AbsolutePath.Equals(lnk))
+                            {
+                                cssClass = "navButtonSelected";
+                            }
+                            Response.Write("<a href='" + lnk + "'>");
+                            Response.Write("<div class='" + cssClass + "'><p>" + txt + "</p></div>");
+                            Response.Write("</a>");
+                        } 
+                    %>
+                </div>
+            </div>
+        </div>
+        <div class="contentsContainer">
+            <asp:ContentPlaceHolder ID="CPHContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <div style="clear: both"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
+
+

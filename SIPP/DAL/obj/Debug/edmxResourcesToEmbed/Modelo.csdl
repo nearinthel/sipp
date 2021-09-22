@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AlacartaModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AlacartaEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Articulo" EntityType="AlacartaModel.Articulo" />
+    <EntitySet Name="ArticuloLocal" EntityType="AlacartaModel.ArticuloLocal" />
+    <EntitySet Name="Descuento" EntityType="AlacartaModel.Descuento" />
+    <EntitySet Name="Empresa" EntityType="AlacartaModel.Empresa" />
+    <EntitySet Name="Especificacion" EntityType="AlacartaModel.Especificacion" />
+    <EntitySet Name="EspecificacionLocal" EntityType="AlacartaModel.EspecificacionLocal" />
+    <EntitySet Name="Estado" EntityType="AlacartaModel.Estado" />
+    <EntitySet Name="Local" EntityType="AlacartaModel.Local" />
+    <EntitySet Name="Pedido" EntityType="AlacartaModel.Pedido" />
+    <EntitySet Name="Ubicacion" EntityType="AlacartaModel.Ubicacion" />
+    <EntitySet Name="Usuario" EntityType="AlacartaModel.Usuario" />
+    <EntitySet Name="Valoracion" EntityType="AlacartaModel.Valoracion" />
+    <AssociationSet Name="FK_Articulo" Association="AlacartaModel.FK_Articulo">
+      <End Role="Articulo" EntitySet="Articulo" />
+      <End Role="ArticuloLocal" EntitySet="ArticuloLocal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local_Articulo" Association="AlacartaModel.FK_Local_Articulo">
+      <End Role="Local" EntitySet="Local" />
+      <End Role="ArticuloLocal" EntitySet="ArticuloLocal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local_Empresa" Association="AlacartaModel.FK_Local_Empresa">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="Local" EntitySet="Local" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valoracion_Empresa" Association="AlacartaModel.FK_Valoracion_Empresa">
+      <End Role="Empresa" EntitySet="Empresa" />
+      <End Role="Valoracion" EntitySet="Valoracion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Especificacion" Association="AlacartaModel.FK_Especificacion">
+      <End Role="Especificacion" EntitySet="Especificacion" />
+      <End Role="EspecificacionLocal" EntitySet="EspecificacionLocal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Local" Association="AlacartaModel.FK_Local">
+      <End Role="Local" EntitySet="Local" />
+      <End Role="EspecificacionLocal" EntitySet="EspecificacionLocal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Estado_Pedido" Association="AlacartaModel.FK_Estado_Pedido">
+      <End Role="Pedido" EntitySet="Pedido" />
+      <End Role="Estado" EntitySet="Estado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pedido_Local" Association="AlacartaModel.FK_Pedido_Local">
+      <End Role="Local" EntitySet="Local" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Pedido_Usuario" Association="AlacartaModel.FK_Pedido_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Pedido" EntitySet="Pedido" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ubicacion_Usuario" Association="AlacartaModel.FK_Ubicacion_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Ubicacion" EntitySet="Ubicacion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Valoracion_Usuario" Association="AlacartaModel.FK_Valoracion_Usuario">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Valoracion" EntitySet="Valoracion" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Articulo">
+    <Key>
+      <PropertyRef Name="Nombre" />
+    </Key>
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Unidad_base" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="ArticuloLocal" Relationship="AlacartaModel.FK_Articulo" FromRole="Articulo" ToRole="ArticuloLocal" />
+  </EntityType>
+  <EntityType Name="ArticuloLocal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="idArticulo" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="idLocal" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Costo_base" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="Articulo" Relationship="AlacartaModel.FK_Articulo" FromRole="ArticuloLocal" ToRole="Articulo" />
+    <NavigationProperty Name="Local" Relationship="AlacartaModel.FK_Local_Articulo" FromRole="ArticuloLocal" ToRole="Local" />
+  </EntityType>
+  <EntityType Name="Descuento">
+    <Key>
+      <PropertyRef Name="Cantidad" />
+      <PropertyRef Name="Porcentaje" />
+    </Key>
+    <Property Name="Cantidad" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Porcentaje" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityType Name="Empresa">
+    <Key>
+      <PropertyRef Name="Rut" />
+    </Key>
+    <Property Name="Rut" Type="Int64" Nullable="false" />
+    <Property Name="Razon_social" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Telefono" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Pass" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Local" Relationship="AlacartaModel.FK_Local_Empresa" FromRole="Empresa" ToRole="Local" />
+    <NavigationProperty Name="Valoracion" Relationship="AlacartaModel.FK_Valoracion_Empresa" FromRole="Empresa" ToRole="Valoracion" />
+  </EntityType>
+  <EntityType Name="Especificacion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="EspecificacionLocal" Relationship="AlacartaModel.FK_Especificacion" FromRole="Especificacion" ToRole="EspecificacionLocal" />
+  </EntityType>
+  <EntityType Name="EspecificacionLocal">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" />
+    <Property Name="idEspecificacion" Type="Int64" Nullable="false" />
+    <Property Name="idLocal" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="costo" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <NavigationProperty Name="Especificacion" Relationship="AlacartaModel.FK_Especificacion" FromRole="EspecificacionLocal" ToRole="Especificacion" />
+    <NavigationProperty Name="Local" Relationship="AlacartaModel.FK_Local" FromRole="EspecificacionLocal" ToRole="Local" />
+  </EntityType>
+  <EntityType Name="Estado">
+    <Key>
+      <PropertyRef Name="IdEstado" />
+    </Key>
+    <Property Name="IdEstado" Type="Int64" Nullable="false" />
+    <Property Name="TipoEstado" Type="Int64" Nullable="false" />
+    <Property Name="FechaPedido" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FechaProceso" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="FechaEnviado" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="IdPedido" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Pedido" Relationship="AlacartaModel.FK_Estado_Pedido" FromRole="Estado" ToRole="Pedido" />
+  </EntityType>
+  <EntityType Name="Local">
+    <Key>
+      <PropertyRef Name="Nombre" />
+    </Key>
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Latitud" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Longitud" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Direccion" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Telefono" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Rut_empresa" Type="Int64" Nullable="false" />
+    <Property Name="Localidad" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Area" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Pass" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="ArticuloLocal" Relationship="AlacartaModel.FK_Local_Articulo" FromRole="Local" ToRole="ArticuloLocal" />
+    <NavigationProperty Name="Empresa" Relationship="AlacartaModel.FK_Local_Empresa" FromRole="Local" ToRole="Empresa" />
+    <NavigationProperty Name="EspecificacionLocal" Relationship="AlacartaModel.FK_Local" FromRole="Local" ToRole="EspecificacionLocal" />
+    <NavigationProperty Name="Pedido" Relationship="AlacartaModel.FK_Pedido_Local" FromRole="Local" ToRole="Pedido" />
+  </EntityType>
+  <EntityType Name="Pedido">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Costo" Type="Decimal" Nullable="false" Precision="18" Scale="0" />
+    <Property Name="Estado" Type="Boolean" Nullable="false" />
+    <Property Name="Id_usuario" Type="Int64" Nullable="false" />
+    <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Local" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Descripcion" Type="String" Nullable="false" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="Codigo_html" Type="String" Nullable="false" MaxLength="5000" Unicode="false" FixedLength="false" />
+    <Property Name="DireccionPedido" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LatitudDireccion" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="LongitudDireccion" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Estado1" Relationship="AlacartaModel.FK_Estado_Pedido" FromRole="Pedido" ToRole="Estado" />
+    <NavigationProperty Name="Local" Relationship="AlacartaModel.FK_Pedido_Local" FromRole="Pedido" ToRole="Local" />
+    <NavigationProperty Name="Usuario" Relationship="AlacartaModel.FK_Pedido_Usuario" FromRole="Pedido" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Ubicacion">
+    <Key>
+      <PropertyRef Name="Nombre_referencia" />
+      <PropertyRef Name="Id_usuario" />
+    </Key>
+    <Property Name="Nombre_referencia" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Latitud" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Longitud" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Direccion" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+    <Property Name="Id_usuario" Type="Int64" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="AlacartaModel.FK_Ubicacion_Usuario" FromRole="Ubicacion" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Apellido" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Celular" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Telefono" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+    <Property Name="Email" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="Pass" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="Pedido" Relationship="AlacartaModel.FK_Pedido_Usuario" FromRole="Usuario" ToRole="Pedido" />
+    <NavigationProperty Name="Ubicacion" Relationship="AlacartaModel.FK_Ubicacion_Usuario" FromRole="Usuario" ToRole="Ubicacion" />
+    <NavigationProperty Name="Valoracion" Relationship="AlacartaModel.FK_Valoracion_Usuario" FromRole="Usuario" ToRole="Valoracion" />
+  </EntityType>
+  <EntityType Name="Valoracion">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int64" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="id_usuario" Type="Int64" Nullable="false" />
+    <Property Name="id_empresa" Type="Int64" Nullable="false" />
+    <Property Name="puntaje" Type="Int32" Nullable="false" />
+    <Property Name="comentario" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Empresa" Relationship="AlacartaModel.FK_Valoracion_Empresa" FromRole="Valoracion" ToRole="Empresa" />
+    <NavigationProperty Name="Usuario" Relationship="AlacartaModel.FK_Valoracion_Usuario" FromRole="Valoracion" ToRole="Usuario" />
+  </EntityType>
+  <Association Name="FK_Articulo">
+    <End Role="Articulo" Type="AlacartaModel.Articulo" Multiplicity="1" />
+    <End Role="ArticuloLocal" Type="AlacartaModel.ArticuloLocal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="Nombre" />
+      </Principal>
+      <Dependent Role="ArticuloLocal">
+        <PropertyRef Name="idArticulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local_Articulo">
+    <End Role="Local" Type="AlacartaModel.Local" Multiplicity="1" />
+    <End Role="ArticuloLocal" Type="AlacartaModel.ArticuloLocal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Local">
+        <PropertyRef Name="Nombre" />
+      </Principal>
+      <Dependent Role="ArticuloLocal">
+        <PropertyRef Name="idLocal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local_Empresa">
+    <End Role="Empresa" Type="AlacartaModel.Empresa" Multiplicity="1" />
+    <End Role="Local" Type="AlacartaModel.Local" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Rut" />
+      </Principal>
+      <Dependent Role="Local">
+        <PropertyRef Name="Rut_empresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valoracion_Empresa">
+    <End Role="Empresa" Type="AlacartaModel.Empresa" Multiplicity="1" />
+    <End Role="Valoracion" Type="AlacartaModel.Valoracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empresa">
+        <PropertyRef Name="Rut" />
+      </Principal>
+      <Dependent Role="Valoracion">
+        <PropertyRef Name="id_empresa" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Especificacion">
+    <End Role="Especificacion" Type="AlacartaModel.Especificacion" Multiplicity="1" />
+    <End Role="EspecificacionLocal" Type="AlacartaModel.EspecificacionLocal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Especificacion">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="EspecificacionLocal">
+        <PropertyRef Name="idEspecificacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Local">
+    <End Role="Local" Type="AlacartaModel.Local" Multiplicity="1" />
+    <End Role="EspecificacionLocal" Type="AlacartaModel.EspecificacionLocal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Local">
+        <PropertyRef Name="Nombre" />
+      </Principal>
+      <Dependent Role="EspecificacionLocal">
+        <PropertyRef Name="idLocal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Estado_Pedido">
+    <End Role="Pedido" Type="AlacartaModel.Pedido" Multiplicity="1" />
+    <End Role="Estado" Type="AlacartaModel.Estado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pedido">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Estado">
+        <PropertyRef Name="IdPedido" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pedido_Local">
+    <End Role="Local" Type="AlacartaModel.Local" Multiplicity="1" />
+    <End Role="Pedido" Type="AlacartaModel.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Local">
+        <PropertyRef Name="Nombre" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="Nombre_Local" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Pedido_Usuario">
+    <End Role="Usuario" Type="AlacartaModel.Usuario" Multiplicity="1" />
+    <End Role="Pedido" Type="AlacartaModel.Pedido" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Pedido">
+        <PropertyRef Name="Id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ubicacion_Usuario">
+    <End Role="Usuario" Type="AlacartaModel.Usuario" Multiplicity="1" />
+    <End Role="Ubicacion" Type="AlacartaModel.Ubicacion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Ubicacion">
+        <PropertyRef Name="Id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Valoracion_Usuario">
+    <End Role="Usuario" Type="AlacartaModel.Usuario" Multiplicity="1" />
+    <End Role="Valoracion" Type="AlacartaModel.Valoracion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Valoracion">
+        <PropertyRef Name="id_usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,23 @@
+C:\Users\Alberto\Desktop\asp\SIPP\Entities\bin\Debug\Entities.dll.config
+C:\Users\Alberto\Desktop\asp\SIPP\Entities\bin\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp\SIPP\Entities\bin\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\Entities\obj\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp\SIPP\Entities\obj\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp explote\SIPP\Entities\bin\Debug\Entities.dll.config
+C:\Users\Alberto\Desktop\asp explote\SIPP\Entities\bin\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\Entities\bin\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\Entities\obj\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\Entities\obj\Debug\Entities.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\Entities\bin\Debug\Entities.dll.config
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\Entities\bin\Debug\Entities.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\Entities\bin\Debug\Entities.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\Entities\obj\Debug\Entities.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\Entities\obj\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\Entities\bin\Debug\Entities.dll.config
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\Entities\bin\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\Entities\bin\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\Entities\obj\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\Entities\obj\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache

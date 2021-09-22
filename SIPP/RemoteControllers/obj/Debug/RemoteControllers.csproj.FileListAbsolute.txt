@@ -1,0 +1,68 @@
+C:\Users\Alberto\Desktop\asp\SIPP\RemoteControllers\obj\Debug\RemoteControllers.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll.config
+C:\Users\Alberto\Desktop\asp\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp\SIPP\RemoteControllers\bin\Debug\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\RemoteControllers\bin\Debug\DAL.dll
+C:\Users\Alberto\Desktop\asp\SIPP\RemoteControllers\bin\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp\SIPP\RemoteControllers\bin\Debug\DAL.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\RemoteControllers\bin\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\RemoteControllers\obj\Debug\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp\SIPP\RemoteControllers\obj\Debug\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\obj\Debug\RemoteControllers.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll.config
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\DAL.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\EntityFramework.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\DAL.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\EntityFramework.xml
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\obj\Debug\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\RemoteControllers\obj\Debug\RemoteControllers.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll.config
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\RemoteControllers.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\DAL.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\Entities.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\EntityFramework.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\DAL.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\Entities.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\EntityFramework.xml
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\obj\Debug\RemoteControllers.csprojResolveAssemblyReference.cache
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\obj\Debug\RemoteControllers.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\RemoteControllers\obj\Debug\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll.config
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\RemoteControllers\bin\Debug\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\RemoteControllers\bin\Debug\DAL.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\RemoteControllers\bin\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\RemoteControllers\bin\Debug\DAL.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\RemoteControllers\bin\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\RemoteControllers\obj\Debug\RemoteControllers.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\RemoteControllers\obj\Debug\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\RemoteControllers\obj\Debug\RemoteControllers.pdb
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll.config
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\RemoteControllers\bin\Debug\RemoteControllers.pdb
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\RemoteControllers\bin\Debug\DAL.dll
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\RemoteControllers\bin\Debug\Entities.dll
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\RemoteControllers\bin\Debug\DAL.pdb
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\RemoteControllers\bin\Debug\Entities.pdb
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\RemoteControllers\obj\Debug\RemoteControllers.csprojResolveAssemblyReference.cache
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\RemoteControllers\obj\Debug\RemoteControllers.dll
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\RemoteControllers\obj\Debug\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll.config
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\RemoteControllers\bin\Debug\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\RemoteControllers\bin\Debug\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\RemoteControllers\bin\Debug\DAL.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\RemoteControllers\bin\Debug\Entities.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\RemoteControllers\bin\Debug\DAL.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\RemoteControllers\bin\Debug\Entities.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\RemoteControllers\obj\Debug\RemoteControllers.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\RemoteControllers\obj\Debug\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\RemoteControllers\obj\Debug\RemoteControllers.pdb

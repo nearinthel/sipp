@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="MPRegistro.master.cs" Inherits="WebAppEmpp.Registro.MPRegistro" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
+
+<asp:Content ID="Content2" ContentPlaceHolderID="contenidoMenuContextual" runat="server">
+
+           <asp:ContentPlaceHolder ID="cpMenu" runat="server">                
+                    
+                </asp:ContentPlaceHolder>
+
+</asp:Content>
+
+
+
+<asp:Content ID="Content3" ContentPlaceHolderID="contenidoPrincipal" runat="server">
+
+  
+                  <asp:ContentPlaceHolder ID="contenidoPrincipal" runat="server">
+                      
+                    
+                </asp:ContentPlaceHolder>
+
+</asp:Content>

@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceLocal" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:19685/ServiceLocal.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:19685/ServiceLocal.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:19685/ServiceLocal.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Entities.DTOs" />
+      <xsd:import schemaLocation="http://localhost:19685/ServiceLocal.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Entities" />
+      <xsd:import schemaLocation="http://localhost:19685/ServiceLocal.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceLocal_encodePass_InputMessage">
+    <wsdl:part name="parameters" element="tns:encodePass" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_encodePass_OutputMessage">
+    <wsdl:part name="parameters" element="tns:encodePassResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_registroEmpresa_InputMessage">
+    <wsdl:part name="parameters" element="tns:registroEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_registroEmpresa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registroEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarEmpresa_InputMessage">
+    <wsdl:part name="parameters" element="tns:modificarEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarEmpresa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modificarEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_loginEmpresa_InputMessage">
+    <wsdl:part name="parameters" element="tns:loginEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_loginEmpresa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_borrarEmpresa_InputMessage">
+    <wsdl:part name="parameters" element="tns:borrarEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_borrarEmpresa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:borrarEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_comprobarRut_InputMessage">
+    <wsdl:part name="parameters" element="tns:comprobarRut" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_comprobarRut_OutputMessage">
+    <wsdl:part name="parameters" element="tns:comprobarRutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_comprobarRazonLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:comprobarRazonLogin" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_comprobarRazonLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:comprobarRazonLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_agregarArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:agregarArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_agregarArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:agregarArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_borrarArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:borrarArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_borrarArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:borrarArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getArticulos_InputMessage">
+    <wsdl:part name="parameters" element="tns:getArticulos" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getArticulos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getArticulosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getArticulo_InputMessage">
+    <wsdl:part name="parameters" element="tns:getArticulo" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getArticulo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getArticuloResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_altaArticuloLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:altaArticuloLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_altaArticuloLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:altaArticuloLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_bajaArticuloLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:bajaArticuloLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_bajaArticuloLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:bajaArticuloLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarArticuloLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:modificarArticuloLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarArticuloLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modificarArticuloLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getArticuloByLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:getArticuloByLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getArticuloByLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getArticuloByLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getArticulosLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:getArticulosLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getArticulosLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getArticulosLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_registroLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:registroLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_registroLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registroLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:modificarLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modificarLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_borrarLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:borrarLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_borrarLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:borrarLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocalesPorArea_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalesPorArea" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocalesPorArea_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalesPorAreaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocalesPorLocalidad_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalesPorLocalidad" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocalesPorLocalidad_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalesPorLocalidadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocalidades_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalidades" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocalidades_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalidadesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocalesPorEmpresa_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalesPorEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocalesPorEmpresa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalesPorEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocalesXEmpresa_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalesXEmpresa" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getLocalesXEmpresa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLocalesXEmpresaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarPassLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:modificarPassLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarPassLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modificarPassLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_loginLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:loginLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_loginLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getEspecificaciones_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEspecificaciones" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getEspecificaciones_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEspecificacionesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getEspecificacionesLocal_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEspecificacionesLocal" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getEspecificacionesLocal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEspecificacionesLocalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_agregarGusto_InputMessage">
+    <wsdl:part name="parameters" element="tns:agregarGusto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_agregarGusto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:agregarGustoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarGusto_InputMessage">
+    <wsdl:part name="parameters" element="tns:modificarGusto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarGusto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modificarGustoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_borrarGusto_InputMessage">
+    <wsdl:part name="parameters" element="tns:borrarGusto" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_borrarGusto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:borrarGustoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getPedidos_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPedidos" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getPedidos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPedidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:getPedido" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_guardarPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:guardarPedido" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_guardarPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:guardarPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_comprobarNombreLocalLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:comprobarNombreLocalLogin" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_comprobarNombreLocalLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:comprobarNombreLocalLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_agregarEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:agregarEstado" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_agregarEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:agregarEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:modificarEstado" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_modificarEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modificarEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_elimarEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:elimarEstado" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_elimarEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:elimarEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEstado" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getEstadoPorPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEstadoPorPedido" />
+  </wsdl:message>
+  <wsdl:message name="IServiceLocal_getEstadoPorPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEstadoPorPedidoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceLocal">
+    <wsdl:operation name="encodePass">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/encodePass" message="tns:IServiceLocal_encodePass_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/encodePassResponse" message="tns:IServiceLocal_encodePass_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registroEmpresa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/registroEmpresa" message="tns:IServiceLocal_registroEmpresa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/registroEmpresaResponse" message="tns:IServiceLocal_registroEmpresa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarEmpresa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/modificarEmpresa" message="tns:IServiceLocal_modificarEmpresa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/modificarEmpresaResponse" message="tns:IServiceLocal_modificarEmpresa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="loginEmpresa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/loginEmpresa" message="tns:IServiceLocal_loginEmpresa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/loginEmpresaResponse" message="tns:IServiceLocal_loginEmpresa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="borrarEmpresa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/borrarEmpresa" message="tns:IServiceLocal_borrarEmpresa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/borrarEmpresaResponse" message="tns:IServiceLocal_borrarEmpresa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="comprobarRut">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/comprobarRut" message="tns:IServiceLocal_comprobarRut_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/comprobarRutResponse" message="tns:IServiceLocal_comprobarRut_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="comprobarRazonLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/comprobarRazonLogin" message="tns:IServiceLocal_comprobarRazonLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/comprobarRazonLoginResponse" message="tns:IServiceLocal_comprobarRazonLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="agregarArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/agregarArticulo" message="tns:IServiceLocal_agregarArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/agregarArticuloResponse" message="tns:IServiceLocal_agregarArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="borrarArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/borrarArticulo" message="tns:IServiceLocal_borrarArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/borrarArticuloResponse" message="tns:IServiceLocal_borrarArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getArticulos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getArticulos" message="tns:IServiceLocal_getArticulos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getArticulosResponse" message="tns:IServiceLocal_getArticulos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getArticulo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getArticulo" message="tns:IServiceLocal_getArticulo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getArticuloResponse" message="tns:IServiceLocal_getArticulo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="altaArticuloLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/altaArticuloLocal" message="tns:IServiceLocal_altaArticuloLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/altaArticuloLocalResponse" message="tns:IServiceLocal_altaArticuloLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="bajaArticuloLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/bajaArticuloLocal" message="tns:IServiceLocal_bajaArticuloLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/bajaArticuloLocalResponse" message="tns:IServiceLocal_bajaArticuloLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarArticuloLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/modificarArticuloLocal" message="tns:IServiceLocal_modificarArticuloLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/modificarArticuloLocalResponse" message="tns:IServiceLocal_modificarArticuloLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getArticuloByLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getArticuloByLocal" message="tns:IServiceLocal_getArticuloByLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getArticuloByLocalResponse" message="tns:IServiceLocal_getArticuloByLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getArticulosLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getArticulosLocal" message="tns:IServiceLocal_getArticulosLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getArticulosLocalResponse" message="tns:IServiceLocal_getArticulosLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registroLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/registroLocal" message="tns:IServiceLocal_registroLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/registroLocalResponse" message="tns:IServiceLocal_registroLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/modificarLocal" message="tns:IServiceLocal_modificarLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/modificarLocalResponse" message="tns:IServiceLocal_modificarLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getLocal" message="tns:IServiceLocal_getLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getLocalResponse" message="tns:IServiceLocal_getLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="borrarLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/borrarLocal" message="tns:IServiceLocal_borrarLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/borrarLocalResponse" message="tns:IServiceLocal_borrarLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocalesPorArea">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getLocalesPorArea" message="tns:IServiceLocal_getLocalesPorArea_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getLocalesPorAreaResponse" message="tns:IServiceLocal_getLocalesPorArea_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocalesPorLocalidad">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getLocalesPorLocalidad" message="tns:IServiceLocal_getLocalesPorLocalidad_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getLocalesPorLocalidadResponse" message="tns:IServiceLocal_getLocalesPorLocalidad_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocalidades">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getLocalidades" message="tns:IServiceLocal_getLocalidades_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getLocalidadesResponse" message="tns:IServiceLocal_getLocalidades_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocalesPorEmpresa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getLocalesPorEmpresa" message="tns:IServiceLocal_getLocalesPorEmpresa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getLocalesPorEmpresaResponse" message="tns:IServiceLocal_getLocalesPorEmpresa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLocalesXEmpresa">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getLocalesXEmpresa" message="tns:IServiceLocal_getLocalesXEmpresa_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getLocalesXEmpresaResponse" message="tns:IServiceLocal_getLocalesXEmpresa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarPassLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/modificarPassLocal" message="tns:IServiceLocal_modificarPassLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/modificarPassLocalResponse" message="tns:IServiceLocal_modificarPassLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="loginLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/loginLocal" message="tns:IServiceLocal_loginLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/loginLocalResponse" message="tns:IServiceLocal_loginLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEspecificaciones">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getEspecificaciones" message="tns:IServiceLocal_getEspecificaciones_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getEspecificacionesResponse" message="tns:IServiceLocal_getEspecificaciones_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEspecificacionesLocal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getEspecificacionesLocal" message="tns:IServiceLocal_getEspecificacionesLocal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getEspecificacionesLocalResponse" message="tns:IServiceLocal_getEspecificacionesLocal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="agregarGusto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/agregarGusto" message="tns:IServiceLocal_agregarGusto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/agregarGustoResponse" message="tns:IServiceLocal_agregarGusto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarGusto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/modificarGusto" message="tns:IServiceLocal_modificarGusto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/modificarGustoResponse" message="tns:IServiceLocal_modificarGusto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="borrarGusto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/borrarGusto" message="tns:IServiceLocal_borrarGusto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/borrarGustoResponse" message="tns:IServiceLocal_borrarGusto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPedidos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getPedidos" message="tns:IServiceLocal_getPedidos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getPedidosResponse" message="tns:IServiceLocal_getPedidos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getPedido" message="tns:IServiceLocal_getPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getPedidoResponse" message="tns:IServiceLocal_getPedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="guardarPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/guardarPedido" message="tns:IServiceLocal_guardarPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/guardarPedidoResponse" message="tns:IServiceLocal_guardarPedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="comprobarNombreLocalLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/comprobarNombreLocalLogin" message="tns:IServiceLocal_comprobarNombreLocalLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/comprobarNombreLocalLoginResponse" message="tns:IServiceLocal_comprobarNombreLocalLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="agregarEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/agregarEstado" message="tns:IServiceLocal_agregarEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/agregarEstadoResponse" message="tns:IServiceLocal_agregarEstado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modificarEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/modificarEstado" message="tns:IServiceLocal_modificarEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/modificarEstadoResponse" message="tns:IServiceLocal_modificarEstado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="elimarEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/elimarEstado" message="tns:IServiceLocal_elimarEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/elimarEstadoResponse" message="tns:IServiceLocal_elimarEstado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getEstado" message="tns:IServiceLocal_getEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getEstadoResponse" message="tns:IServiceLocal_getEstado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEstadoPorPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceLocal/getEstadoPorPedido" message="tns:IServiceLocal_getEstadoPorPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceLocal/getEstadoPorPedidoResponse" message="tns:IServiceLocal_getEstadoPorPedido_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceLocal" type="tns:IServiceLocal">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="encodePass">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/encodePass" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registroEmpresa">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/registroEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarEmpresa">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/modificarEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginEmpresa">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/loginEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="borrarEmpresa">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/borrarEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comprobarRut">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/comprobarRut" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comprobarRazonLogin">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/comprobarRazonLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarArticulo">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/agregarArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="borrarArticulo">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/borrarArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArticulos">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getArticulos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArticulo">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getArticulo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="altaArticuloLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/altaArticuloLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="bajaArticuloLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/bajaArticuloLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarArticuloLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/modificarArticuloLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArticuloByLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getArticuloByLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getArticulosLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getArticulosLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registroLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/registroLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/modificarLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="borrarLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/borrarLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocalesPorArea">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getLocalesPorArea" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocalesPorLocalidad">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getLocalesPorLocalidad" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocalidades">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getLocalidades" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocalesPorEmpresa">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getLocalesPorEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getLocalesXEmpresa">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getLocalesXEmpresa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarPassLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/modificarPassLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="loginLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/loginLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEspecificaciones">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getEspecificaciones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEspecificacionesLocal">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getEspecificacionesLocal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarGusto">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/agregarGusto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarGusto">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/modificarGusto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="borrarGusto">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/borrarGusto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPedidos">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getPedidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPedido">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardarPedido">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/guardarPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="comprobarNombreLocalLogin">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/comprobarNombreLocalLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarEstado">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/agregarEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modificarEstado">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/modificarEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="elimarEstado">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/elimarEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEstado">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEstadoPorPedido">
+      <soap:operation soapAction="http://tempuri.org/IServiceLocal/getEstadoPorPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceLocal">
+    <wsdl:port name="BasicHttpBinding_IServiceLocal" binding="tns:BasicHttpBinding_IServiceLocal">
+      <soap:address location="http://localhost:19685/ServiceLocal.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

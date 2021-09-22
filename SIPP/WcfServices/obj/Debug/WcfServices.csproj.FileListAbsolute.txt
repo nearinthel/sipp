@@ -1,0 +1,74 @@
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\obj\Debug\WcfServices.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\bin\WcfServices.dll
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\bin\WcfServices.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\bin\DAL.dll
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\bin\Entities.dll
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\bin\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\bin\DAL.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\bin\Entities.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\bin\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\obj\Debug\WcfServices.dll
+C:\Users\Alberto\Desktop\asp\SIPP\WcfServices\obj\Debug\WcfServices.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\obj\Debug\WcfServices.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\WcfServices.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\WcfServices.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\DAL.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\Entities.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\EntityFramework.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\EntityFramework.SqlServer.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\DAL.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\Entities.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\EntityFramework.xml
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\bin\EntityFramework.SqlServer.xml
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\obj\Debug\WcfServices.dll
+C:\Users\Alberto\Desktop\asp explote\SIPP\WcfServices\obj\Debug\WcfServices.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\WcfServices.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\WcfServices.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\DAL.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\Entities.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\EntityFramework.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\EntityFramework.SqlServer.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\RemoteControllers.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\DAL.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\Entities.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\RemoteControllers.pdb
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\EntityFramework.xml
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\bin\EntityFramework.SqlServer.xml
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\obj\Debug\WcfServices.csprojResolveAssemblyReference.cache
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\obj\Debug\WcfServices.dll
+C:\Users\hugui_000\Desktop\asp oficial\SIPP\WcfServices\obj\Debug\WcfServices.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\bin\WcfServices.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\bin\WcfServices.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\bin\DAL.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\bin\Entities.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\bin\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\bin\DAL.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\bin\Entities.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\bin\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\obj\Debug\WcfServices.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\obj\Debug\WcfServices.dll
+C:\Users\Alberto\Desktop\asp oficial 2\SIPP\WcfServices\obj\Debug\WcfServices.pdb
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\bin\WcfServices.dll
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\bin\WcfServices.pdb
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\bin\DAL.dll
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\bin\Entities.dll
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\bin\RemoteControllers.dll
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\bin\DAL.pdb
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\bin\Entities.pdb
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\bin\RemoteControllers.pdb
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\obj\Debug\WcfServices.csprojResolveAssemblyReference.cache
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\obj\Debug\WcfServices.dll
+C:\Users\hugui_000\Desktop\asp oficial 3\SIPP\WcfServices\obj\Debug\WcfServices.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\bin\WcfServices.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\bin\WcfServices.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\bin\DAL.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\bin\Entities.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\bin\RemoteControllers.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\bin\DAL.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\bin\Entities.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\bin\RemoteControllers.pdb
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\obj\Debug\WcfServices.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\obj\Debug\WcfServices.dll
+C:\Users\Alberto\Desktop\asp oficial 4\SIPP\WcfServices\obj\Debug\WcfServices.pdb

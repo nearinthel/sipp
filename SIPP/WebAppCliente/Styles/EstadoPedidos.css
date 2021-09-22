@@ -1,0 +1,30 @@
+﻿body {
+}
+.capaEstados{
+
+    height: auto;
+    min-height :80px;
+    width: 100%;
+    background-color: #ffffff;
+    /*background-color: #f5f5f5;*/
+    /*padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;*/
+    /*margin-left: auto;
+    margin-right: auto;*/
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    box-shadow:  2px 2px  10px rgba(128, 128, 128 , 0.8) ;
+    /*background-color:white;*/
+}
+
+
+tr:first-child  {
+font-weight: bold;
+
+}
+ tr:first-child  {
+
+}

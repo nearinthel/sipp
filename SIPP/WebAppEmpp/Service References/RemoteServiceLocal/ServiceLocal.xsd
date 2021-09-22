@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Entities.DTOs" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Entities.DTOs" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="DTOEmpresa">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Pass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RazonSocial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rut" type="xs:long" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOEmpresa" nillable="true" type="tns:DTOEmpresa" />
+  <xs:complexType name="DTOArticulo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Unidad_base" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOArticulo" nillable="true" type="tns:DTOArticulo" />
+  <xs:complexType name="ArrayOfDTOArticulo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOArticulo" nillable="true" type="tns:DTOArticulo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOArticulo" nillable="true" type="tns:ArrayOfDTOArticulo" />
+  <xs:complexType name="DTOArticuloLocal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Articulo" nillable="true" type="tns:DTOArticulo" />
+      <xs:element minOccurs="0" name="Costo_base" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Local" nillable="true" type="tns:DTOLocal" />
+      <xs:element minOccurs="0" name="id" type="xs:long" />
+      <xs:element minOccurs="0" name="idArticulo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="idLocal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOArticuloLocal" nillable="true" type="tns:DTOArticuloLocal" />
+  <xs:complexType name="DTOLocal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Articulo" nillable="true" type="tns:ArrayOfDTOArticulo" />
+      <xs:element minOccurs="0" name="Direccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Localidad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Longitud" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Pass" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rut_empresa" type="xs:long" />
+      <xs:element minOccurs="0" name="Telefono" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOLocal" nillable="true" type="tns:DTOLocal" />
+  <xs:complexType name="ArrayOfDTOArticuloLocal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOArticuloLocal" nillable="true" type="tns:DTOArticuloLocal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOArticuloLocal" nillable="true" type="tns:ArrayOfDTOArticuloLocal" />
+  <xs:complexType name="ArrayOfDTOLocal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOLocal" nillable="true" type="tns:DTOLocal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOLocal" nillable="true" type="tns:ArrayOfDTOLocal" />
+  <xs:complexType name="ArrayOfDTOEspecificacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOEspecificacion" nillable="true" type="tns:DTOEspecificacion" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOEspecificacion" nillable="true" type="tns:ArrayOfDTOEspecificacion" />
+  <xs:complexType name="DTOEspecificacion">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="id" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOEspecificacion" nillable="true" type="tns:DTOEspecificacion" />
+  <xs:complexType name="ArrayOfDTOEspecificacionLocal">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOEspecificacionLocal" nillable="true" type="tns:DTOEspecificacionLocal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOEspecificacionLocal" nillable="true" type="tns:ArrayOfDTOEspecificacionLocal" />
+  <xs:complexType name="DTOEspecificacionLocal">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Especificacion" nillable="true" type="tns:DTOEspecificacion" />
+      <xs:element minOccurs="0" name="Local" nillable="true" type="tns:DTOLocal" />
+      <xs:element minOccurs="0" name="costo" type="xs:decimal" />
+      <xs:element minOccurs="0" name="id" type="xs:long" />
+      <xs:element minOccurs="0" name="idEspecificacion" type="xs:long" />
+      <xs:element minOccurs="0" name="idLocal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOEspecificacionLocal" nillable="true" type="tns:DTOEspecificacionLocal" />
+  <xs:complexType name="ArrayOfDTOPedido">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DTOPedido" nillable="true" type="tns:DTOPedido" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDTOPedido" nillable="true" type="tns:ArrayOfDTOPedido" />
+  <xs:complexType name="DTOPedido">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Codigo_html" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Costo" type="xs:decimal" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DireccionPedido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Id_usuario" type="xs:long" />
+      <xs:element minOccurs="0" name="LatitudDireccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LongitudDireccion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre_Local" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOPedido" nillable="true" type="tns:DTOPedido" />
+  <xs:complexType name="DTOEstado">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FechaEnviado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaPedido" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaProceso" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IdEstado" type="xs:long" />
+      <xs:element minOccurs="0" name="IdPedido" type="xs:long" />
+      <xs:element minOccurs="0" name="TipoEstado" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DTOEstado" nillable="true" type="tns:DTOEstado" />
+</xs:schema>
